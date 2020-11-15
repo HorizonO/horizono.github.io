@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-30T06:54:25.207Z</updated>
+  <updated>2020-11-15T02:09:23.332Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端面试——CSS</title>
+    <link href="http://example.com/2020/11/15/FE-interview-CSS/"/>
+    <id>http://example.com/2020/11/15/FE-interview-CSS/</id>
+    <published>2020-11-15T01:46:51.000Z</published>
+    <updated>2020-11-15T02:09:23.332Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前端面试——CSS"><a href="#前端面试——CSS" class="headerlink" title="前端面试——CSS"></a>前端面试——CSS</h2><h3 id="1-介绍一下标准CSS的盒子模型和低版本的IE盒子模型有什么不同？"><a href="#1-介绍一下标准CSS的盒子模型和低版本的IE盒子模型有什么不同？" class="headerlink" title="1.介绍一下标准CSS的盒子模型和低版本的IE盒子模型有什么不同？"></a>1.介绍一下标准CSS的盒子模型和低版本的IE盒子模型有什么不同？</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;盒模型都是由四个部分组成的，分别是margin、border、padding和content。标准盒模型和IE盒模型的区别在于设置width和height时，所对应的范围不同。标准盒模型的width和height属性的范围只包含了content，而IE盒模型的width和height属性的范围包含了border、padding和content。<br>一般来说，可以通过修改元素的box-sizing属性来改变元素的盒模型。</p><hr><blockquote><p>（1）有两种盒子模型：IE盒模型（border-box）、W3C标准盒模型（content-box）<br>（2）盒模型：分为内容（content）、填充（padding）、边界（margin）、边框（border）四个部分。</p><p>IE盒模型和W3C标准盒模型的区别：</p><blockquote><p> （1）W3C标准盒模型：属性width，height只包含内容content，不包含border和padding；</p><p>（2）：IE盒模型：属性width，height包含<em>content</em>、<em>border</em>和<em>padding</em>，指的是 <strong>width=content+padding+border</strong>；</p></blockquote></blockquote><blockquote><p>&nbsp;&nbsp;在IE8+浏览器中使用哪个盒模型可以由<strong>box-sizing</strong>（CSS新增的属性）控制，默认值为<strong>content-box</strong>（W3C标准盒模型）;如果将<em>box-sizing</em>设为<em>border-box</em>则用的是<strong>IE盒模型</strong>。如果在ie6，7，8中DOCTYPE缺失会将盒子模型解释为IE盒子模型。若在页面中声明了DOCTYPE类型，所有浏览器都会把盒模型解释为W3C盒模型。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="面试" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+    <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="CSS" scheme="http://example.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端基础面试题——HTML</title>
+    <link href="http://example.com/2020/11/12/FE-interview-HTML/"/>
+    <id>http://example.com/2020/11/12/FE-interview-HTML/</id>
+    <published>2020-11-12T08:25:38.000Z</published>
+    <updated>2020-11-12T09:07:36.031Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="HTML基础面试"><a href="#HTML基础面试" class="headerlink" title="HTML基础面试"></a>HTML基础面试</h2><h3 id="1、-lt-img-gt-的-title-和-alt-有什么区别："><a href="#1、-lt-img-gt-的-title-和-alt-有什么区别：" class="headerlink" title="1、&lt;img&gt;的 title 和 alt 有什么区别："></a>1、<code>&lt;img&gt;</code>的 title 和 alt 有什么区别：</h3><ul><li>title是 global attributes 之一，用于为元素提供附加的advisory information。通常当鼠标滑动到元素上的时候显示。</li><li>alt是<code>&lt;img&gt;</code>的特有属性，是图片内容的等价描述，用于图片无法加载时显示，读屏器阅读图片。可提高图片可访问性，除了纯装饰图片外都必须设置有意义的值，搜索引擎会重点分析。</li></ul><h3 id="2、doctype-是什么-举例常见-doctype-及特点"><a href="#2、doctype-是什么-举例常见-doctype-及特点" class="headerlink" title="2、doctype 是什么,举例常见 doctype 及特点"></a>2、doctype 是什么,举例常见 doctype 及特点</h3><ul><li><!doctype> 声明必须处于HTML文档的头部，在<code>&lt;html&gt;&lt;/html&gt;</code>标签之前，HTML5中不区分大小写</li><li> <!doctype> 声明不是一个HTML标签，是一个用于告诉浏览器当前HTML版本的指令</li><li> 现代浏览器的html布局引擎通过检查 doctype 决定使用兼容模式还是标准模式对文档进行渲染，一些浏览器有一个接近标准模型。</li><li> 在HTML4.01中 &lt;!doctype&gt; 声明指向一个DTD，由于HTML4.01基于SGML，所以DTD指定了标记规则以保证浏览器正确渲染内容</li><li> HTML5不基于SGML，所以不用指定DTD</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
