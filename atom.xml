@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-23T03:22:28.640Z</updated>
+  <updated>2020-11-20T11:36:54.169Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/2020/11/23/installMysql/"/>
-    <id>http://example.com/2020/11/23/installMysql/</id>
-    <published>2020-11-23T02:55:53.190Z</published>
-    <updated>2020-11-23T03:22:28.640Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Mac下安装MySQL以及出现的问题。"><a href="#Mac下安装MySQL以及出现的问题。" class="headerlink" title="Mac下安装MySQL以及出现的问题。"></a>Mac下安装MySQL以及出现的问题。</h2><h3 id="1-下载MySQL-Community-Server"><a href="#1-下载MySQL-Community-Server" class="headerlink" title="1.下载MySQL Community Server"></a>1.下载MySQL Community Server</h3><p>这一步很简单，直接到mysql<a href="https://www.mysql.com/downloads/">官网</a>选择MySQL Community Server进行下载即可。</p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a58591caff67ab?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><h3 id="2-傻瓜式安装"><a href="#2-傻瓜式安装" class="headerlink" title="2.傻瓜式安装"></a>2.傻瓜式安装</h3><p>下载完安装包后，双击打开：</p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a5868806fe79a7?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p>接下来几乎都是傻瓜式安装，点击next：</p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a586903a155800?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a58696e3606224?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a586a03a0fda61?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a586a52ded040c?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a586bfac5b2fb6?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a586b4c6de6f39?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p>到这一步要注意，设置mysql密码的类型，第一项是使用加强版密码，第二项是使用简单密码，这里根据自己需求选择。</p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a586d5a55b54d3?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a586e155266107?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a586f2b855f275?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><p>完成安装，点击关闭。</p><p>安装成功后，可以在系统偏好设置看到MySQL设置：</p><p><img src="https://user-gold-cdn.xitu.io/2019/4/26/16a5873e1e5ca7d7?imageView2/0/w/1280/h/960/format/webp/ignore-error/1"></p><h3 id="3-配置环境变量"><a href="#3-配置环境变量" class="headerlink" title="3.配置环境变量"></a>3.配置环境变量</h3><p>这一步非常重要！！</p><p>如果不配置环境变量的话，执行mysql命令，必须在mysql的安装目录下或者直接报错。</p><ol><li>编辑配置文件 <code>vim ~/.bash_profile</code></li><li>添加内容</li></ol><p><code># mysql </code></p><p><code>export PATH=$&#123;PATH&#125;:/usr/local/mysql/bin</code></p><p><code>#快速启动、结束MySQL服务, 可以使用alias命令</code> </p><p><code>alias mysqlstart=&#39;sudo /usr/local/mysql/support-files/mysql.server start&#39; </code></p><p><code>alias mysqlstop=&#39;sudo /usr/local/mysql/support-files/mysql.server stop&#39;</code></p><ol start="3"><li>启动mysql</li></ol><p>执行命令<code>mysql -u root -p</code></p><h3 id="4-遇到的错误"><a href="#4-遇到的错误" class="headerlink" title="4.遇到的错误"></a>4.遇到的错误</h3><ol><li>ERROR 2002 (HY000): Can’t connect to local MySQL server through socket ‘/tmp/mysql.sock’ (2)</li></ol><p>出现这个错误，主要问题是mysql没用启动，可以直接在系统偏好设置中启动，也可以在命令行输入<code>mysqlstart</code>启动即可。（这里我直接使用mysqlstart就能启动是因为我在配置文件中配置好了，代替了命令<code>mysql.server start</code>，mysqlstop一样）</p><ol start="2"><li>ERROR 1045 (28000): Access denied for user ‘root’@’localhost’ (using password：No/Yes)</li></ol><p>这个问题可能是权限不够，或者是输入的mysql密码错误。</p><p>权限不够的话：启动命令前加上 sudo 即可；</p><p>密码错误：重新输啊，或者改密码呗。（改密码可以直接在系统偏好设置选择<strong>Initialize Database</strong>修改，比命令行操作方便很多，前提是你的系统是mac os）</p><ol start="3"><li>如果还遇到有错误再补充……</li></ol><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;Mac下安装MySQL以及出现的问题。&quot;&gt;&lt;a href=&quot;#Mac下安装MySQL以及出现的问题。&quot; class=&quot;headerlink&quot; title=&quot;Mac下安装MySQL以及出现的问题。&quot;&gt;&lt;/a&gt;Mac下安装MySQL以及出现的问题。&lt;/h2&gt;&lt;h3 i</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>mac环境下Mongodb的安装与使用</title>
