@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-20T11:36:54.169Z</updated>
+  <updated>2020-11-30T09:39:30.371Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cssPreprocessor</title>
+    <link href="http://example.com/2020/11/29/cssPreprocessor/"/>
+    <id>http://example.com/2020/11/29/cssPreprocessor/</id>
+    <published>2020-11-29T02:31:59.000Z</published>
+    <updated>2020-11-30T09:39:30.371Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近逛招聘网站的时候，发现有很多公司要求需要使用less，sass，stylus的CSS预处理器。我马上去看了这三个CSS预处理器的在线文档，简单上手了一下。下面就简单的说一下CSS预处理器。</p><p>MDN是这样定义CSS预处理器的：CSS预处理器是一个能让你通过预处理器自己独有的语法来生成CSS的程序。</p><h3 id="1-为什么会出现或者需要CSS预处理器呢？"><a href="#1-为什么会出现或者需要CSS预处理器呢？" class="headerlink" title="1.为什么会出现或者需要CSS预处理器呢？"></a>1.为什么会出现或者需要CSS预处理器呢？</h3><p>CSS（Cascading Style Sheet）被译为级联样式表，也称为风格样式表（style sheet），它主要是用来进行网页风格设计的，通过设置样式表，可以对HTML的标签进行样式编辑，能够进行初步的交互设计。但是，CSS本身而言，它并不是一种编程语言，它不像编程语言一样有自己的变量，常量或条件语句，只是一行行的属性描述，写起来费事而且难组织和维护。这个时候，就需要CSS预处理器的出现了。</p><p><strong>CSS预处理器</strong>是用一种专门的编程语言，进行web页面样式设计，然后编译成正常的CSS文件，以供项目使用。CSS预处理器还为CSS增加了一些编程的特性，无需考虑浏览器的兼容性问题。例如：可以在CSS中使用变量，函数等编程语言的特性来编写样式，可以<strong>让CSS更加简洁，适应性更强，可读性更佳，更易于代码的维护</strong>等诸多优点。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近逛招聘网站的时候，发现有很多公司要求需要使用less，sass，stylus的CSS预处理器。我马上去看了这三个CSS预处理器的在线文档，简单上手了一下。下面就简单的说一下CSS预处理器。&lt;/p&gt;
+&lt;p&gt;MDN是这样定义CSS预处理器的：CSS预处理器是一个能让你通过预</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="css" scheme="http://example.com/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>mac环境下Mongodb的安装与使用</title>
