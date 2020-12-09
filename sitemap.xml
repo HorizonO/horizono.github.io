@@ -207,7 +207,7 @@
 
   
   <url>
-    <loc>http://example.com/tags/hugo/</loc>
+    <loc>http://example.com/tags/HTML/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -221,6 +221,13 @@
   </url>
   
   <url>
+    <loc>http://example.com/tags/css/</loc>
+    <lastmod>2020-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/JavaScript/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
@@ -228,7 +235,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/HTML/</loc>
+    <loc>http://example.com/tags/hugo/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -236,13 +243,6 @@
   
   <url>
     <loc>http://example.com/tags/markdown/</loc>
-    <lastmod>2020-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/css/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -277,6 +277,13 @@
   </url>
   
   <url>
+    <loc>http://example.com/tags/linux/</loc>
+    <lastmod>2020-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/this/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
@@ -285,13 +292,6 @@
   
   <url>
     <loc>http://example.com/tags/javascript/</loc>
-    <lastmod>2020-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/linux/</loc>
     <lastmod>2020-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
