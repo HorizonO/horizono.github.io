@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-02T16:08:36.027Z</updated>
+  <updated>2021-01-07T13:30:48.875Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,8 +21,16 @@
     <link href="http://example.com/2021/01/03/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     <id>http://example.com/2021/01/03/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</id>
     <published>2021-01-02T16:08:28.066Z</published>
-    <updated>2021-01-02T16:08:36.027Z</updated>
+    <updated>2021-01-07T13:30:48.875Z</updated>
     
+    <content type="html"><![CDATA[<p>title: “常用工具”<br>date: 2021-01-02T22:43:57+08:00<br>draft: true<br>tags: ‘笔记’<br>category: ‘笔记’<br>cover: /img/cat2.jpeg</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;title: “常用工具”&lt;br&gt;date: 2021-01-02T22:43:57+08:00&lt;br&gt;draft: true&lt;br&gt;tags: ‘笔记’&lt;br&gt;category: ‘笔记’&lt;br&gt;cover: /img/cat2.jpeg&lt;/p&gt;
+</summary>
+      
     
     
     
@@ -51,9 +59,9 @@
     <category term="面试" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/%E9%9D%A2%E8%AF%95/"/>
     
     
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
     <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
     
   </entry>
   
@@ -62,7 +70,7 @@
     <link href="http://example.com/2020/12/29/niceDream/"/>
     <id>http://example.com/2020/12/29/niceDream/</id>
     <published>2020-12-29T00:51:56.000Z</published>
-    <updated>2021-01-02T13:17:03.554Z</updated>
+    <updated>2021-01-07T13:30:06.270Z</updated>
     
     <content type="html"><![CDATA[<p>做了两个印象深刻又很有意思的梦。</p>]]></content>
     
@@ -112,7 +120,7 @@
     <link href="http://example.com/2020/11/20/useMongodb/"/>
     <id>http://example.com/2020/11/20/useMongodb/</id>
     <published>2020-11-20T08:50:30.000Z</published>
-    <updated>2021-01-02T13:15:54.132Z</updated>
+    <updated>2021-01-07T13:30:21.205Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Mac下安装MongoDB"><a href="#Mac下安装MongoDB" class="headerlink" title="Mac下安装MongoDB"></a>Mac下安装MongoDB</h2><p>在mac下安装mongodb的方法有很多，例如：直接在mongodb官网下载压缩包或者使用brew命令下载等等。</p><h3 id="1-安装mongodb具体操作"><a href="#1-安装mongodb具体操作" class="headerlink" title="1.安装mongodb具体操作"></a>1.安装mongodb具体操作</h3><ul><li><p>我遇到的问题：</p><ul><li>brew命令安装失败，报错</li></ul><p><img src="http://ww1.sinaimg.cn/large/88b0c4d5gy1gkvucighf4j20ui0jo415.jpg" alt="brew命令安装出错"></p><p>原因：MongoDB不再是开源的了，并且已经从Homebrew中移除 #43770</p><p>解决方法：设定：<code>$ brew tap mongodb/brew</code>，然后再安装<code>brew install mongodb-community</code>即可</p></li></ul><p>  <img src="http://ww1.sinaimg.cn/large/88b0c4d5gy1gkvuf8kxc4j20ui0jo77o.jpg" alt="报错"></p><p>  原因：权限问题导致的</p><p>  解决方法：把权限收回，根据提示的目录收回</p><p>  <code>sudo chown -R whoam:admin /usr/local/share</code></p><ul><li>mongodb启动失败，报错</li></ul><p>“Shutting down”,”attr”:{“exitCode”:48}}</p><p>“Shutting down”,”attr”:{“exitCode”:100}}</p><p><img src="http://ww1.sinaimg.cn/large/88b0c4d5gy1gkvvc6wqh1j20vq0jogr1.jpg" alt="启动exitCode:100"></p><p>解决方法：</p>]]></content>
     
@@ -210,9 +218,9 @@
     <category term="面试" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/%E9%9D%A2%E8%AF%95/"/>
     
     
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
     <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
     
   </entry>
   
