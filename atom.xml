@@ -91,9 +91,9 @@
     <category term="面试" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/%E9%9D%A2%E8%AF%95/"/>
     
     
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
     <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
     
   </entry>
   
@@ -249,9 +249,9 @@
     <category term="面试" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/%E9%9D%A2%E8%AF%95/"/>
     
     
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
     <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
     
   </entry>
   
